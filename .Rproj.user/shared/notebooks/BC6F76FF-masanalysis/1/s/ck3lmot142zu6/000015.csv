@@ -1,0 +1,5 @@
+"0","coop_model <- lmer(coopother.agg ~ Intensity * Environment + (1|run_number), data = training_data)
+"
+"2","Error in initializePtr() : 
+  function 'cholmod_factor_ldetA' not provided by package 'Matrix'
+"

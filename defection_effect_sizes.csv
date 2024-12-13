@@ -1,0 +1,8 @@
+"","Parameter","Eta2_partial","CI","CI_low","CI_high"
+"1","intervention_type",0.0437948378509341,0.95,0.0423298370165005,1
+"2","intervention_intensity",0.276358724859899,0.95,0.211448024132356,1
+"3","factor(environmentType)",0.660556892347075,0.95,0.61530416530878,1
+"4","intervention_type:intervention_intensity",0.0234022323680422,0.95,0.0223015722213995,1
+"5","intervention_type:factor(environmentType)",0.0329135728526477,0.95,0.0316016983950862,1
+"6","intervention_intensity:factor(environmentType)",0.307310307141445,0.95,0.240061133375565,1
+"7","intervention_type:intervention_intensity:factor(environmentType)",0.0182492944528478,0.95,0.0172464941089098,1

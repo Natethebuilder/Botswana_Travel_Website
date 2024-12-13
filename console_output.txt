@@ -1,0 +1,160 @@
+[1] "ANOVA Results for Prejudice Reduction:"
+Analysis of Variance Table
+                                                                 npar    Sum Sq  Mean Sq    F value
+intervention_type                                                   5 126666006 25333201 2.8852e+05
+intervention_intensity                                              1     22419    22419 2.5533e+02
+factor(environmentType)                                             2         0        0 1.2000e-03
+intervention_type:intervention_intensity                            5   7791141  1558228 1.7747e+04
+intervention_type:factor(environmentType)                          10     10011     1001 1.1402e+01
+intervention_intensity:factor(environmentType)                      2         1        0 2.9000e-03
+intervention_type:intervention_intensity:factor(environmentType)   10      1873      187 2.1330e+00
+[1] "\nEffect Sizes for Prejudice Reduction:"
+# Effect Size for ANOVA (Type III)
+
+Parameter                                                        | Eta2 (partial) |       95% CI
+------------------------------------------------------------------------------------------------
+intervention_type                                                |           0.46 | [0.45, 1.00]
+intervention_intensity                                           |           0.44 | [0.38, 1.00]
+factor(environmentType)                                          |       2.51e-05 | [0.00, 1.00]
+intervention_type:intervention_intensity                         |           0.31 | [0.31, 1.00]
+intervention_type:factor(environmentType)                        |       1.72e-04 | [0.00, 1.00]
+intervention_intensity:factor(environmentType)                   |       1.80e-05 | [0.00, 1.00]
+intervention_type:intervention_intensity:factor(environmentType) |       1.07e-04 | [0.00, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "\nPost-hoc Comparisons:"
+$emmeans
+environmentType = 0:
+ intervention_type  emmean   SE  df asymp.LCL asymp.UCL
+ communityEvent       12.0 1.47 Inf      9.10      14.9
+ economicIncentive    53.5 1.47 Inf     50.65      56.4
+ legalPolicy          19.8 1.47 Inf     16.94      22.7
+ sharedResource       19.2 1.47 Inf     16.35      22.1
+ training             15.8 1.47 Inf     12.95      18.7
+ youthSocialization   80.9 1.47 Inf     78.01      83.8
+
+environmentType = 1:
+ intervention_type  emmean   SE  df asymp.LCL asymp.UCL
+ communityEvent       12.6 1.47 Inf      9.74      15.5
+ economicIncentive    53.0 1.47 Inf     50.07      55.8
+ legalPolicy          19.8 1.47 Inf     16.96      22.7
+ sharedResource       19.3 1.47 Inf     16.39      22.2
+ training             15.8 1.47 Inf     12.93      18.7
+ youthSocialization   81.3 1.47 Inf     78.37      84.1
+
+environmentType = 2:
+ intervention_type  emmean   SE  df asymp.LCL asymp.UCL
+ communityEvent       12.0 1.47 Inf      9.10      14.9
+ economicIncentive    53.8 1.47 Inf     50.95      56.7
+ legalPolicy          19.8 1.47 Inf     16.93      22.7
+ sharedResource       19.2 1.47 Inf     16.35      22.1
+ training             15.8 1.47 Inf     12.93      18.7
+ youthSocialization   80.5 1.47 Inf     77.66      83.4
+
+Degrees-of-freedom method: asymptotic 
+Confidence level used: 0.95 
+
+$contrasts
+environmentType = 0:
+ contrast                               estimate    SE  df  z.ratio p.value
+ communityEvent - economicIncentive     -41.5534 0.126 Inf -330.517  <.0001
+ communityEvent - legalPolicy            -7.8426 0.126 Inf  -62.381  <.0001
+ communityEvent - sharedResource         -7.2481 0.126 Inf  -57.651  <.0001
+ communityEvent - training               -3.8448 0.126 Inf  -30.581  <.0001
+ communityEvent - youthSocialization    -68.9049 0.126 Inf -548.072  <.0001
+ economicIncentive - legalPolicy         33.7107 0.126 Inf  268.136  <.0001
+ economicIncentive - sharedResource      34.3053 0.126 Inf  272.865  <.0001
+ economicIncentive - training            37.7086 0.126 Inf  299.935  <.0001
+ economicIncentive - youthSocialization -27.3516 0.126 Inf -217.555  <.0001
+ legalPolicy - sharedResource             0.5946 0.126 Inf    4.729  <.0001
+ legalPolicy - training                   3.9979 0.126 Inf   31.799  <.0001
+ legalPolicy - youthSocialization       -61.0623 0.126 Inf -485.691  <.0001
+ sharedResource - training                3.4033 0.126 Inf   27.070  <.0001
+ sharedResource - youthSocialization    -61.6568 0.126 Inf -490.421  <.0001
+ training - youthSocialization          -65.0602 0.126 Inf -517.491  <.0001
+
+environmentType = 1:
+ contrast                               estimate    SE  df  z.ratio p.value
+ communityEvent - economicIncentive     -40.3275 0.126 Inf -320.766  <.0001
+ communityEvent - legalPolicy            -7.2216 0.126 Inf  -57.441  <.0001
+ communityEvent - sharedResource         -6.6475 0.126 Inf  -52.874  <.0001
+ communityEvent - training               -3.1862 0.126 Inf  -25.343  <.0001
+ communityEvent - youthSocialization    -68.6303 0.126 Inf -545.888  <.0001
+ economicIncentive - legalPolicy         33.1059 0.126 Inf  263.325  <.0001
+ economicIncentive - sharedResource      33.6800 0.126 Inf  267.892  <.0001
+ economicIncentive - training            37.1413 0.126 Inf  295.423  <.0001
+ economicIncentive - youthSocialization -28.3028 0.126 Inf -225.122  <.0001
+ legalPolicy - sharedResource             0.5741 0.126 Inf    4.566  0.0001
+ legalPolicy - training                   4.0354 0.126 Inf   32.098  <.0001
+ legalPolicy - youthSocialization       -61.4087 0.126 Inf -488.447  <.0001
+ sharedResource - training                3.4613 0.126 Inf   27.532  <.0001
+ sharedResource - youthSocialization    -61.9828 0.126 Inf -493.013  <.0001
+ training - youthSocialization          -65.4442 0.126 Inf -520.545  <.0001
+
+environmentType = 2:
+ contrast                               estimate    SE  df  z.ratio p.value
+ communityEvent - economicIncentive     -41.8464 0.126 Inf -332.848  <.0001
+ communityEvent - legalPolicy            -7.8304 0.126 Inf  -62.283  <.0001
+ communityEvent - sharedResource         -7.2495 0.126 Inf  -57.663  <.0001
+ communityEvent - training               -3.8345 0.126 Inf  -30.500  <.0001
+ communityEvent - youthSocialization    -68.5581 0.126 Inf -545.313  <.0001
+ economicIncentive - legalPolicy         34.0160 0.126 Inf  270.564  <.0001
+ economicIncentive - sharedResource      34.5969 0.126 Inf  275.185  <.0001
+ economicIncentive - training            38.0119 0.126 Inf  302.348  <.0001
+ economicIncentive - youthSocialization -26.7117 0.126 Inf -212.466  <.0001
+ legalPolicy - sharedResource             0.5808 0.126 Inf    4.620  0.0001
+ legalPolicy - training                   3.9958 0.126 Inf   31.783  <.0001
+ legalPolicy - youthSocialization       -60.7277 0.126 Inf -483.030  <.0001
+ sharedResource - training                3.4150 0.126 Inf   27.163  <.0001
+ sharedResource - youthSocialization    -61.3085 0.126 Inf -487.650  <.0001
+ training - youthSocialization          -64.7235 0.126 Inf -514.813  <.0001
+
+Degrees-of-freedom method: asymptotic 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+
+[1] "\nANOVA Results for Cooperation:"
+Analysis of Variance Table
+                                                                 npar    Sum Sq   Mean Sq  F value
+intervention_type                                                   5 688232459 137646492 7285.563
+intervention_intensity                                              1   3015358   3015358  159.601
+factor(environmentType)                                             2  56174349  28087174 1486.641
+intervention_type:intervention_intensity                            5  45426798   9085360  480.884
+intervention_type:factor(environmentType)                          10 524224193  52422419 2774.693
+intervention_intensity:factor(environmentType)                      2   2038417   1019209   53.946
+intervention_type:intervention_intensity:factor(environmentType)   10  36279436   3627944  192.025
+[1] "\nANOVA Results for Defection:"
+Analysis of Variance Table
+                                                                 npar    Sum Sq   Mean Sq   F value
+intervention_type                                                   5 668879423 133775885 15633.951
+intervention_intensity                                              1   1058776   1058776   123.736
+factor(environmentType)                                             2   6728843   3364422   393.189
+intervention_type:intervention_intensity                            5  40931226   8186245   956.700
+intervention_type:factor(environmentType)                          10 503959073  50395907  5889.605
+intervention_intensity:factor(environmentType)                      2   1229964    614982    71.871
+intervention_type:intervention_intensity:factor(environmentType)   10  31751043   3175104   371.064
+[1] "\nEffect Sizes for Cooperation:"
+# Effect Size for ANOVA (Type III)
+
+Parameter                                                        | Eta2 (partial) |       95% CI
+------------------------------------------------------------------------------------------------
+intervention_type                                                |           0.02 | [0.02, 1.00]
+intervention_intensity                                           |           0.33 | [0.26, 1.00]
+factor(environmentType)                                          |           0.56 | [0.51, 1.00]
+intervention_type:intervention_intensity                         |           0.01 | [0.01, 1.00]
+intervention_type:factor(environmentType)                        |           0.02 | [0.02, 1.00]
+intervention_intensity:factor(environmentType)                   |           0.25 | [0.18, 1.00]
+intervention_type:intervention_intensity:factor(environmentType) |       9.53e-03 | [0.01, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].[1] "\nEffect Sizes for Defection:"
+# Effect Size for ANOVA (Type III)
+
+Parameter                                                        | Eta2 (partial) |       95% CI
+------------------------------------------------------------------------------------------------
+intervention_type                                                |           0.04 | [0.04, 1.00]
+intervention_intensity                                           |           0.28 | [0.21, 1.00]
+factor(environmentType)                                          |           0.66 | [0.62, 1.00]
+intervention_type:intervention_intensity                         |           0.02 | [0.02, 1.00]
+intervention_type:factor(environmentType)                        |           0.03 | [0.03, 1.00]
+intervention_intensity:factor(environmentType)                   |           0.31 | [0.24, 1.00]
+intervention_type:intervention_intensity:factor(environmentType) |           0.02 | [0.02, 1.00]
+
+- One-sided CIs: upper bound fixed at [1.00].

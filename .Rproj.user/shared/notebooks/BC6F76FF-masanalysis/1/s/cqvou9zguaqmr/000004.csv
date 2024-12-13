@@ -1,0 +1,25 @@
+"0","# Inter-group cooperation vs Intensity
+ggplot(data, aes(x = Intensity, y = coopother.agg, color = Environment)) +
+  geom_smooth(method = ""loess"", se = TRUE) +
+  facet_wrap(~ Intervention, scales = ""free"") +
+  labs(title = ""Effect of Interventions on Inter-group Cooperation"",
+       x = ""Intervention Intensity"",
+       y = ""Inter-group Cooperation"") +
+  theme_minimal()
+# Inter-group cooperation vs Intensity
+ggplot(data, aes(x = Intensity, y = coopother.agg, color = Environment)) +
+  geom_smooth(method = ""loess"", se = TRUE) +
+  facet_wrap(~ Intervention, scales = ""free"") +
+  labs(title = ""Effect of Interventions on Inter-group Cooperation"",
+       x = ""Intervention Intensity"",
+       y = ""Inter-group Cooperation"") +
+  theme_minimal()
+"
+"0","# Prejudice Reduction vs Intensity"
+"0","ggplot(data, aes(x = Intensity, y = PrejudiceReduction, color = Environment)) +"
+"0","  geom_smooth(method = ""loess"", se = TRUE) +"
+"0","  facet_wrap(~ Intervention, scales = ""free"") +"
+"0","  labs(title = ""Effect of Interventions on Prejudice Reduction"","
+"0","       x = ""Intervention Intensity"","
+"0","       y = ""Prejudice Reduction"") +"
+"0","  theme_minimal()"

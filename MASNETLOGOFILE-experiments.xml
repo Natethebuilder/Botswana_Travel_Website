@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE experiments SYSTEM "behaviorspace.dtd">
+<experiments>
+  <experiment name="SharedResourceIntensityEffects" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="LegalPolicyIntensity" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="CommunityEventIntensity" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="YouthSocializationIntensity" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="TrainingIntensity" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="EconomicIncentiveIntensity" repetitions="10" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <timeLimit steps="100"/>
+    <metric>coopother-agg</metric>
+    <metric>defother-agg</metric>
+    <metric>coopown-agg</metric>
+    <metric>mean [prejudice] of people</metric>
+    <metric>mean [prejudice] of people with [group = "A"]</metric>
+    <metric>mean [prejudice] of people with [group = "B"]</metric>
+    <metric>mean [prejudice] of people with [group = "C"]</metric>
+    <metric>mean [prejudice] of people with [group = "D"]</metric>
+    <metric>mean [prejudice] of people with [group = "E"]</metric>
+    <enumeratedValueSet variable="environmentType">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_sharedResourceIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_legalPolicyIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_communityEventIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_youthSocializationIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_trainingIntensity">
+      <value value="0"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="slider_economicIncentiveIntensity">
+      <value value="0"/>
+      <value value="1"/>
+      <value value="2"/>
+      <value value="3"/>
+      <value value="4"/>
+      <value value="5"/>
+      <value value="6"/>
+      <value value="7"/>
+      <value value="8"/>
+      <value value="9"/>
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
